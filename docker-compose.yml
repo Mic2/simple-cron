@@ -5,7 +5,7 @@ services:
       restart: always
       build:
         context: .
-        dockerfile: docker/dockerfiles/cron-ubuntu-dockerfile
+        dockerfile: docker/dockerfiles/cron-alpine-dockerfile
         args:
           cron_job_run_dependencies: 
       volumes:
