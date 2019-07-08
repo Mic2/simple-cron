@@ -7,6 +7,6 @@ services:
         context: .
         dockerfile: docker/dockerfiles/cron-ubuntu-dockerfile
         args:
-          cron_job_run_dependencies: 
+          cron_job_run_dependencies: php7 php7-curl php7-mysqli php7-json
       volumes:
         - "./:/data/www/"
